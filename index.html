@@ -34,6 +34,11 @@
         </header>
         <main>
             <h1>Welcome to Ryan Bax's Website. </h1>
+            <a href="images/realSelfie.jpg">
+                <img sizes="(max-width:1600w) 600w, 1200w" srcset="images/realSelfie150.jpg 600w, 
+                        images/realSelfie300.jpg 1200w" alt="Portrait of webpage designer.">
+
+            </a>
             <p>Hello, and welcome to my website. My name is Ryan Bax and I am a student at sault college. I currently am
                 enrolled in computer programming and this is the fruit of my labours in the CSD112 class. Outside of
                 class time, I enjoy hiking, gaming, and spending time with my friends.</p>
@@ -43,9 +48,23 @@
                 homicide rate.
                 I have spent all 23 years of my life in this beautiful city, and still currently reside within it.
             </p>
+            <table>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+            </table>
             <h2>My favorite things</h2>
-            <a href="https://www.fromsoftware.jp/ww/"><img src="images/logo.png" alt="From Software Logo"></a>
-
+            <figure>
+                <figcaption>From Software</figcaption>
+                <a href="https://www.fromsoftware.jp/ww/"><img src="images/logo.png" alt="From Software Logo"></a>
+            </figure>
             <h3>FromSoftware Games</h3>
             <ol>
                 <li>Bloodborne</li>
@@ -54,13 +73,19 @@
             </ol>
             <h3>Haiku</h3>
             <p>An old silent pond<br>
-            <!--Found Me!-->
-            A frog jumps into the pond—<br>
-            Splash! Silence again.<br>
-            <cite>
-                by <span class="author">Matsuo Bashō</span>
-            </cite>
+                <!--Found Me!-->
+                A frog jumps into the pond—<br>
+                Splash! Silence again.<br>
+                <cite>
+                    by <span class="author">Matsuo Bashō</span>
+                </cite>
             </p>
+            <audio controls type="audio/mpeg">
+                <source src="https://ia601509.us.archive.org/34/items/halloween_2110.poem_librivox/halloween_bangs_zj_128kb.mp3" type="audio/mpeg">  
+                <a href="https://ia601509.us.archive.org/34/items/halloween_2110.poem_librivox/halloween_bangs_zj_128kb.mp3">Hallowe'en Audio Book</a>
+            </audio>
+            <h3>Youtube Video</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/cV2gBU6hKfY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </main>
         <footer>
             <hr>
@@ -68,12 +93,22 @@
                 can invest it. The best use of your life is to invest it in something that will last longer than your
                 time on Earth.” <br>
                 <cite> &mdash;<span class="author"> Rick Warren </span> </cite>
-                
+
             </blockquote>
-            <p>&copy; <a href="mailto:ryan.bax@student.saultcollege.ca?subject=Message%20from%20CSD112%20Website">Ryan
-                Bax </a></p>
+            <p>&copy; <a href="mailto:ryan.bax@student.saultcollege.ca?subject=Message%20from%20CSD112%20Website">
+                    Ryan Bax </a></p>
+
+            <picture width='70px'>
+                <source srcset="images/sc-logo.svg" type="image/svg+xml">
+                <img width="70px">
+                <source srcset="/images/sc-logo.png 1x,
+                    images/sc-logo@1.5x.png 1.5x,
+                    images/sc-logo@2x.png 2x" alt="Sault College Logo" type="image/png">
+                
+            </picture>
         </footer>
         <a href="#top" title="Back to Top">◤</a>
+
     </div>
 </body>
 
