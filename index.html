@@ -18,7 +18,16 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
+    <style>
+        table {
+            border-collapse: collapse;
+        }
 
+        th,
+        td {
+            border: 1px solid rgba(0, 0, 0, 0.2);
+        }
+    </style>
 </head>
 
 <body>
@@ -71,6 +80,49 @@
                     <td>1</td>
                 </tr>
             </table>
+            <caption>Table 1. Current Courses</caption>
+
+            <table>
+                <caption>Table 1. Current Courses</caption>
+                <thead>
+                    <tr>
+                        <th rowspan="2">Term</th>
+                        <th colspan="3">Course</th>
+                    </tr>
+                    <tr>
+                        <th>Code</th>
+                        <th>Name</th>
+                        <th>Hrs/week</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th rowspan="4">Fall<br></td>
+                        <td>CSD111</td>
+                        <td>Computing Environment</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>CSD112</td>
+                        <td>Intro. to web dev.</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>CSD110</td>
+                        <td>Intro to Programming</td>
+                        <td>4<br></td>
+                    </tr>
+                    <tr>
+                        <td>CMM115</td>
+                        <td>Communications</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <th colspan="3" >TOTAL</td>
+                        <td>14</td>
+                    </tr>
+                </tbody>
+            </table>
             <h2>My favorite things</h2>
             <figure>
                 <figcaption>From Software</figcaption>
@@ -97,7 +149,8 @@
                     src="https://ia601509.us.archive.org/34/items/halloween_2110.poem_librivox/halloween_bangs_zj_128kb.mp3"
                     type="audio/mpeg">
                 <a
-                    href="https://ia601509.us.archive.org/34/items/halloween_2110.poem_librivox/halloween_bangs_zj_128kb.mp3">Download Hallowe'en
+                    href="https://ia601509.us.archive.org/34/items/halloween_2110.poem_librivox/halloween_bangs_zj_128kb.mp3">Download
+                    Hallowe'en
                     Audio Book</a>
             </audio>
             <h3>Youtube Video</h3>
@@ -119,8 +172,7 @@
 
             <picture>
                 <source srcset="images/sc-logo.svg" type="image/svg+xml">
-                <img width="70" src="images/sc-logo.png" alt="Sault College Logo"
-                    srcset="images/sc-logo.png 1x,
+                <img width="70" src="images/sc-logo.png" alt="Sault College Logo" srcset="images/sc-logo.png 1x,
                         images/sc-logo@1.5x.png 1.5x,
                         images/sc-logo@2x.png 2x">
 
