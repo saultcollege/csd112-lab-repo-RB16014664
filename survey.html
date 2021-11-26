@@ -47,43 +47,53 @@
 
             <h1>Survey</h1>
             <form action="https://formspree.io/f/mgergnaw" method="post">
-                <label for="name_field">What is your name?</label>
-                <input name="name_field" id="name_field" required>
-                <br>
-                <label for="email_field">What is your email address?</label>
-                <input type="email" name="email_field" id="email_field" required>
-                <br>
-                <label for="best_whole_number">Which whole number is best?</label>
-                <input type="number" name="best_whole_number" id="best_whole_number" min="1">
-                <br>
-                <label for="best_day">Which day is best?</label>
-                <input type="date" name="best_day" id="best_day">
-                <br>
-                <label for="best_bear">Which bear is best?</label>
-                <select name="best_bear" id="best_bear" required>
-                    <option value="&nbsp;" label="best_bear" disabled selected></option>
-                    <option>Black</option>
-                    <option>Brown</option>
-                    <option>Care</option>
-                    <option>Panda</option>
-                    <option>Polar</option>
-                    <option>Teddy</option>
-                </select>
+                <p>
+                    <label for="name_field">What is your name?<abbr title="required" aria-label="required">*</abbr></label>
+                    <input type="text" name="name_field" id="name_field" required>
+                </p>
+                <p>
+                    <label for="email_field">What is your email address?<abbr title="required" aria-label="required">*</abbr></label>
+                    <input type="email" name="email_field" id="email_field" required>
+                    
+                </p>
+                <p>
+                    <label for="best_whole_number">Which whole number is best?</label>
+                    <input type="number" name="best_whole_number" id="best_whole_number" min="1">
+                    
+                </p>
+                <p>
+                    <label for="best_day">Which day is best?</label>
+                    <input type="date" name="best_day" id="best_day">
+                    
+                </p>
+                <p>
+                    <label for="best_bear">Which bear is best?<abbr title="required" aria-label="required">*</abbr></label>
+                    <select name="best_bear" id="best_bear" required>
+                        <option value="" label="best_bear" selected>&nbsp;</option>
+                        <option>Black</option>
+                        <option>Brown</option>
+                        <option>Care</option>
+                        <option>Panda</option>
+                        <option>Polar</option>
+                        <option>Teddy</option>
+                    </select>
+                </p>
 
                 <fieldset>
                     <legend>Do you like radio buttons?</legend>
                     <ul>
-                        <li><input type="radio" name="radio_like" value="Yes">Yes</li>
-                        <li><input type="radio" name="radio_like" value="No">No</li>
-                        <li><input type="radio" name="radio_like" value="?" checked="checked">None of your buisness
+                        <li><input type="radio" name="radio_like" value="yes" id="radio_yes"><label for="radio_yes">Yes</label></li>
+                        <li><input type="radio" name="radio_like" value="no" id="radio_no"><label for="radio_no">No</label></li>
+                        <li><input type="radio" name="radio_like" value="?" checked="checked" id="radio_neither"><label for="radio_neither">None of your buisness</label>
                         </li>
                     </ul>
                 </fieldset>
-
-                <label for="life_meaning">What is the meaning of life</label>
-                <textarea rows="5" cols="50" name="life_meaning" id="life_meaning"
-                    placeholder="Enter the correct answer here"></textarea>
-                <button type="submit">Send</button>
+                <p>
+                    <label for="life_meaning">What is the meaning of life</label>
+                    <textarea rows="5" cols="50" name="life_meaning" id="life_meaning"
+                        placeholder="Enter the correct answer here"></textarea>
+                </p>
+                <p><button type="submit">Send</button></p>
             </form>
 
 
