@@ -37,7 +37,8 @@ hr {
 body {
     background-color: #AC365E;
     color:#ffffff;
-
+    font-family: 'BioRhyme', serif;
+    line-height: 1.3;
 }
 header#top nav ul{
     margin-top: 0;
@@ -64,6 +65,10 @@ h1, h2, h3 {
 }
 a:link{
     color: #b8b8b8;
+    text-decoration: none;
+}
+a:link:hover{
+    text-decoration: underline;
 }
 
 header#top nav ul li a:link{
@@ -74,7 +79,10 @@ header#top nav ul li a:link{
     display: inline-flex;
     padding-top: 1em;
     padding-bottom: .5em;
-    
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
 }
 header#top nav ul li a:link:hover{
     border-color: rgba(35,15,15,1)
@@ -116,4 +124,55 @@ button[type=submit]{
 }
 dl dt::after{
     content: ":";
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Space Mono', monospace;
+}
+ol{
+    list-style-type: upper-roman;
+}
+iframe{
+    border-top-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+}
+fieldset ul{
+    padding: 0;
+}
+fieldset ul li{
+    list-style-type: none;
+}
+h1{
+    
+    background: rgb(2,0,36);
+    color: #ffe4c4a5;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(187,20,83,1) 35%, rgba(192,80,118,1) 100%);
+    background-clip: text;
+}
+.bio{
+    column-count: 3;
+    column-gap: 2em;
+}
+.bio table{
+    column-span: all;
+    margin-top: 1em;
+    border-collapse: collapse;
+    caption-side: bottom;
+}
+img{
+    max-width: 100%;
+}
+.bio a img{
+    padding: 2%;
+    background-color: white;
+    box-shadow: 5px 10px;
+}
+footer{
+    font-size: 75%;
+    text-align: center;
+}
+a[href="#top"]{
+    text-shadow: 2px 2px violet;
+}
+a[href="#top"]:hover{
+    text-decoration: none;
 }

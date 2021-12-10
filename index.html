@@ -19,6 +19,10 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" type="text/css" href="normalize.css">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@300&family=Space+Mono:wght@700&display=swap"
+        rel="stylesheet">
     <style>
         table {
             border-collapse: collapse;
@@ -44,79 +48,77 @@
         </header>
         <main>
             <h1>Welcome to Ryan Bax's Website. </h1>
-            <!--- <picture>
-                <source media="(max-width: 500px)" srcset="images/realSelfie150.jpg">
-                <source media="(min-width: 465px)" srcset="images/realSelfie300.jpg ">
-                <img src="realSelfie.jpg" style="width:auto;">
-              </picture>
-              I can do this with picture but am struggling to get img sizes to work
-              --->
 
 
-
-            <a href="images/realSelfie.jpg">
-                <img sizes="(max-width:500px) 600px, (min-width: 501px) 1200px, 1500px" srcset="https://via.placeholder.com/300x150 600w, 
+            <div class="bio">
+                <a href="images/realSelfie.jpg">
+                    <img sizes="(max-width:500px) 600px, (min-width: 501px) 1200px, 1500px" srcset="https://via.placeholder.com/300x150 600w, 
                         images/realSelfie300.jpg 1200w" src="images/realSelfie.jpg"
-                    alt="Portrait of webpage designer.">
+                        alt="Portrait of webpage designer.">
 
-            </a>
-            <p>Hello, and welcome to my website. My name is Ryan Bax and I am a student at sault college. I currently am
-                enrolled in computer programming and this is the fruit of my labours in the CSD112 class. Outside of
-                class time, I enjoy hiking, gaming, and spending time with my friends.</p>
-            <p>I was born in the city of Sault Ste Marie, at the old Sault Area Hospital. Sault Ste Marie is a city with
-                breathtaking views in both the city and surrounding areas.
-                Unfortunitally the city also has the 5th highest crime rate in ontario, but luckly not the highest
-                homicide rate.
-                I have spent all 23 years of my life in this beautiful city, and still currently reside within it.
-            </p>
-            
-            <table>
-                <caption>Table 1. Current Courses</caption>
-                <thead>
-                    <tr>
-                        <th rowspan="2" scope="col">Term</th>
-                        <th colspan="3" scope="colgroup">Course</th>
-                    </tr>
-                    <tr>
-                        <th scope="col">Code</th>
-                        <th scope="col">Name</th>
-                        <th scope="col">Hrs/week</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th rowspan="4" scope="rowgroup">Fall<br></th>
-                        <td>CSD111</td>
-                        <td>Computing Environment</td>
-                        <td>4</td>
-                    </tr>
-                    <tr>
-                        <td class="eventable">CSD112</td>
-                        <td class="eventable">Intro. to web dev.</td>
-                        <td class="eventable">4</td>
-                    </tr>
-                    <tr>
-                        <td>CSD110</td>
-                        <td>Intro to Programming</td>
-                        <td>4<br></td>
-                    </tr>
-                    <tr>
-                        <td class="eventable">CMM115</td>
-                        <td class="eventable">Communications</td>
-                        <td class="eventable">2</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <th colspan="3" scope="row">TOTAL</th>
-                        <td>14</td>
-                    </tr>
-                </tfoot>
-            </table>
+                </a>
+                <p>Hello, and welcome to my website. My name is Ryan Bax and I am a student at sault college. I
+                    currently am
+                    enrolled in computer programming and this is the fruit of my labours in the CSD112 class. Outside of
+                    class time, I enjoy hiking, gaming, and spending time with my friends.</p>
+                <p>I was born in the city of Sault Ste Marie, at the old Sault Area Hospital. Sault Ste Marie is a city
+                    with
+                    breathtaking views in both the city and surrounding areas.
+                    Unfortunitally the city also has the 5th highest crime rate in ontario, but luckly not the highest
+                    homicide rate.
+                    I have spent all 23 years of my life in this beautiful city, and still currently reside within it.
+                </p>
+
+                <table>
+                    <caption>Table 1. Current Courses</caption>
+                    <thead>
+                        <tr>
+                            <th rowspan="2" scope="col">Term</th>
+                            <th colspan="3" scope="colgroup">Course</th>
+                        </tr>
+                        <tr>
+                            <th scope="col">Code</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Hrs/week</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th rowspan="4" scope="rowgroup">Fall<br></th>
+                            <td>CSD111</td>
+                            <td>Computing Environment</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td class="eventable">CSD112</td>
+                            <td class="eventable">Intro. to web dev.</td>
+                            <td class="eventable">4</td>
+                        </tr>
+                        <tr>
+                            <td>CSD110</td>
+                            <td>Intro to Programming</td>
+                            <td>4<br></td>
+                        </tr>
+                        <tr>
+                            <td class="eventable">CMM115</td>
+                            <td class="eventable">Communications</td>
+                            <td class="eventable">2</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th colspan="3" scope="row">TOTAL</th>
+                            <td>14</td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+            </div>
             <h2>My favorite things</h2>
             <figure>
                 <figcaption>From Software</figcaption>
-                <a href="https://www.fromsoftware.jp/ww/"><img width="760px" src="images/logo.png" alt="From Software Logo"></a>
+                <a href="https://www.fromsoftware.jp/ww/"><img width="760" src="images/logo.png"
+                        alt="From Software Logo"></a>
             </figure>
             <h3>FromSoftware Games</h3>
             <ol>

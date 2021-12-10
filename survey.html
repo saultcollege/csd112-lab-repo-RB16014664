@@ -19,6 +19,10 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" type="text/css" href="normalize.css">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@300&family=Space+Mono:wght@700&display=swap"
+        rel="stylesheet">
 
     <style>
         table {
@@ -50,26 +54,29 @@
             <h1>Survey</h1>
             <form action="https://formspree.io/f/mgergnaw" method="post">
                 <p>
-                    <label for="name_field">What is your name?<abbr title="required" aria-label="required">*</abbr></label>
+                    <label for="name_field">What is your name?<abbr title="required"
+                            aria-label="required">*</abbr></label>
                     <input type="text" name="name_field" id="name_field" required>
                 </p>
                 <p>
-                    <label for="email_field">What is your email address?<abbr title="required" aria-label="required">*</abbr></label>
+                    <label for="email_field">What is your email address?<abbr title="required"
+                            aria-label="required">*</abbr></label>
                     <input type="email" name="email_field" id="email_field" required>
-                    
+
                 </p>
                 <p>
                     <label for="best_whole_number">Which whole number is best?</label>
                     <input type="number" name="best_whole_number" id="best_whole_number" min="1">
-                    
+
                 </p>
                 <p>
                     <label for="best_day">Which day is best?</label>
                     <input type="date" name="best_day" id="best_day">
-                    
+
                 </p>
                 <p>
-                    <label for="best_bear">Which bear is best?<abbr title="required" aria-label="required">*</abbr></label>
+                    <label for="best_bear">Which bear is best?<abbr title="required"
+                            aria-label="required">*</abbr></label>
                     <select name="best_bear" id="best_bear" required>
                         <option value="" label="best_bear" selected>&nbsp;</option>
                         <option>Black</option>
@@ -84,9 +91,12 @@
                 <fieldset>
                     <legend>Do you like radio buttons?</legend>
                     <ul>
-                        <li><input type="radio" name="radio_like" value="yes" id="radio_yes"><label for="radio_yes">Yes</label></li>
-                        <li><input type="radio" name="radio_like" value="no" id="radio_no"><label for="radio_no">No</label></li>
-                        <li><input type="radio" name="radio_like" value="?" checked="checked" id="radio_neither"><label for="radio_neither">None of your buisness</label>
+                        <li><input type="radio" name="radio_like" value="yes" id="radio_yes"><label
+                                for="radio_yes">Yes</label></li>
+                        <li><input type="radio" name="radio_like" value="no" id="radio_no"><label
+                                for="radio_no">No</label></li>
+                        <li><input type="radio" name="radio_like" value="?" checked="checked" id="radio_neither"><label
+                                for="radio_neither">None of your buisness</label>
                         </li>
                     </ul>
                 </fieldset>
