@@ -31,7 +31,7 @@ hr {
     margin-bottom: 2em;
     border: none;
     border-bottom: 3px;
-    border-top-style: dotted;
+    border-bottom-style: dotted;
     border-color: violet;
 }
 body {
